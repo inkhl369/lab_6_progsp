@@ -15,6 +15,7 @@ create table product(
   idSeller INT NOT NULL ,
   FOREIGN KEY (idSeller) references Account(idUser) ON DELETE CASCADE ON UPDATE CASCADE
 );
+de
 
 create table act(
     idAct SERIAL PRIMARY KEY ,

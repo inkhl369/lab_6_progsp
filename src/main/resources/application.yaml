@@ -14,3 +14,5 @@ spring:
   spring:
     resources:
       add-mappings=true:
+server:
+  port : 8090

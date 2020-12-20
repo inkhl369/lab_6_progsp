@@ -5,6 +5,7 @@ import com.computerAccessoriesStore.models.User;
 import com.computerAccessoriesStore.models.enums.Role;
 import com.computerAccessoriesStore.service.ProductService;
 import com.computerAccessoriesStore.service.UserService;
+import com.computerAccessoriesStore.service.impl.UserServiceImpl;
 import com.computerAccessoriesStore.transfer.ProductDTO;
 import com.computerAccessoriesStore.transfer.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ import java.util.Optional;
 @RequestMapping("/admin")
 public class UserController {
     @Autowired
-    UserService userService;
+    UserService userService = new UserServiceImpl();
 
     @Autowired
     private ProductService productService;
